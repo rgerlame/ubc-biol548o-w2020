@@ -1,5 +1,8 @@
 # ubc-biol548o-w2021
 
+TRIAL
+
+
 BIOL 548O is a short module designed to help students work with datasets more effectively and efficiently. 
 
 
