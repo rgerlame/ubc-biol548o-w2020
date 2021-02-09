@@ -10,7 +10,7 @@ Version control is pretty simple. For each different file that that is part of y
 * A complete history of all changes that have ever been made to the file  
 * Ability to go back to any previous version
 
-Researchers have developed many (perhaps idiosyncratic) to acheive (or partially acheive) these three goals that may involve many different tools. For example, many scientists use Dropbox and then save each version of a [file with a different name](http://phdcomics.com/comics/archive.php?comicid=1531).  
+Researchers have developed many (perhaps idiosyncratic) ways to achieve (or partially achieve) these three goals that may involve many different tools. For example, many scientists use Dropbox and then save each version of a [file with a different name](http://phdcomics.com/comics/archive.php?comicid=1531).  
 
 In this class, we will be using the software git and the online service GitHub as a version control system.
 
