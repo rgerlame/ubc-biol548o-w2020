@@ -31,7 +31,7 @@ In this class, we will be using the software git and the online service GitHub a
 
 ### How git works (broadly speaking)
 
-* There is only file for each file (name isn't changed with each change to the contents)  
+* There is only one file for each file (name isn't changed with each change to the contents)  
 * The entire "tree" of changes is stored (in a hidden folder of your computer). Note that git can only keep track of changes inside text files; PDFs, .docx, .xls files, etc. can be added to git but the system can't see inside of them
 * A (simplified) version of the git workflow is as follows:
     * Files are in your working directory (folder on your computer)
