@@ -1,6 +1,24 @@
+### Packages
+
+Today we are going to be using the `dplyr` package, which comes bundled as part of the `tidyverse`.
+
+You can either load `dplyr` on its own
+```
+library(dplyr)
+```
+Or just bring the whole tidyverse along for the ride
+```
+library(tidyverse)
+```
+For the following we are going to be using multiple packages from the tidyverse so you may as well load the whole thing.
+
+**Cool trick:** you can call functions from a package without loading it using the `::` notation. For example,`dplyr::select()` allows you to use the `select()` function even if `dplyr` isn't loaded. Why would you want to do this? First, it saves memory (potentially important if you are loading in a ton of packages and data) and second, it is useful if multiple packages have functions with the same names (which happens more often than you might think).
+
+**Even cooler trick:** if you feel like living on the edge, you can even call hidden, internal functions from packages using `:::`. Typically only a very small subset of functions are **exported** into what is known as the `NAMESPACE`. Each of these functions will hopefully have documentation and can be called directly once you've loaded the library. But all the little functions that are called by the visible functions are still there and available to use; unfortunately these are not documented so you have to have an idea of what the function does.
+
 ### Introduction to tabular data
 
-* We will be working with data from the Portal Project.
+* We will be working with data from a real project called the Portal Project.
     * Long-term experimental study of small mammals in Arizona.
     * Download `surveys` from `data` into folder of the class repository and put it in the `data` folder of your repository.
     
@@ -24,23 +42,6 @@ surveys <- read_csv("data/surveys.csv")
     * Each column or field contains a single attribute.
         * A single type of information
 
-### Packages
-
-Today we are going to be using the `dplyr` package, which comes bundled as part of the `tidyverse`.
-
-You can either load `dplyr` on its own
-```
-library(dplyr)
-```
-Or just bring the whole tidyverse along for the ride
-```
-library(tidyverse)
-```
-For the following we are going to be using multiple packages from the tidyverse so you may as well load the whole thing.
-
-**Cool trick:** you can call functions from a package without loading it using the `::` notation. For example,`dplyr::select()` allows you to use the `select()` function even if `dplyr` isn't loaded. Why would you want to do this? First, it saves memory (potentially important if you are loading in a ton of packages and data) and second, it is useful if multiple packages have functions with the same names (which happens more often than you might think).
-
-**Even cooler trick:** if you feel like living on the edge, you can even call hidden, internal functions from packages using `:::`. Typically only a very small subset of functions are **exported** into what is known as the `NAMESPACE`. Each of these functions will hopefully have documentation and can be called directly once you've loaded the library. But all the little functions that are called by the visible functions are still there and available to use; unfortunately these are not documented so you have to have an idea of what the function does.
 
 ### Basic `dplyr`
 
@@ -153,7 +154,7 @@ summarize(surveys_by_species, abundance = n())
 * E.g., mean, max, min
 
 ```r
-species_weight <- summarize(surveys_by_species_plot, avg_weight = mean(weight))
+species_weight <- summarize(surveys_by_species, avg_weight = mean(weight))
 ```
 
 * *Open table*
@@ -191,7 +192,7 @@ ds_weight_by_year <- summarize(ds_data_by_year,
 
 ### Exercise 2
 
-In this excercise you will use the `survey` data you downloaded above.
+In this exercise you will use the `surveys` data you downloaded above. For each of the 5 tasks below, start anew from the 'surveys' data.
 
 ***Do not use pipes for this exercise.***
 
@@ -255,7 +256,7 @@ ds_weight_by_year <- surveys %>%
 
 ### Exercise 3 
 
-Again working with the `survey`, use pipes (`%>%`) to combine the following operations to manipulate the data.
+Again working with the `surveys` data, use pipes (`%>%`) to combine the following operations to manipulate the data. For each of the 5 tasks below, start anew from the 'surveys' data.
 
 1. Use `mutate()`, `select()`, and `na.omit()` to create a new data frame with
    the `year`, `species_id`, and weight **in kilograms** of each individual,
