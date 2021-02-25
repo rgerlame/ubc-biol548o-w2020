@@ -16,8 +16,8 @@ To get practice using these, we will be working through the examples in the [R f
 
 ## Exercises
 
-1. Complete Exercises 13.2.1 (Questions 1,2, and 3). Write down your answers in a new plain text file (click *File > New File > Text File*) named `lecture-5-exercises.txt`. Add, commit, and push to GitHub.
+1. Read section 13.2 and complete Exercise 13.2.1 (Questions 1, 2, and 3 only). Write down your answers in a new plain text file (click *File > New File > Text File*) named `lecture-5-exercises.txt`. Add, commit, and push to GitHub.
 
-2. Complete Exercises 13.4.6 (Questions 1,2, and 3). Write down your answers and add them to you `lecture-5-exercises.txt` file. Add, commit, and push to GitHub.
+2. Read section 13.4 and complete Exercise 13.4.6 (Questions 1, 2, and 3 only). Write down your answers and add them to you `lecture-5-exercises.txt` file. Add, commit, and push to GitHub.
 
-3. Complete Exercises 13.5.1 (Questions 2 and 5). Put the necessary code into a new R file `lecture-5-exercises.R`. Add, commit, and push to GitHub. 
+3. Read section 13.5 and complete Exercise 13.5.1 (Questions 2 and 5 only). Put the necessary code into a new R file `lecture-5-exercises.R`. Add, commit, and push to GitHub. 
