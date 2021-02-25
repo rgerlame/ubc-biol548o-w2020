@@ -20,4 +20,4 @@ To get practice using these, we will be working through the examples in the [R f
 
 2. Complete Exercises 13.4.6 (Parts 1,2, and 3). Write down your answers and add them to you `lecture-5-exercises.txt` file. Add, commit, and push to GitHub.
 
-3. Complete Exercises 13.5.1 (Parts 3 and 4). Put the necessary code into a new R file `lecture-5-exercises.R`. Add, commit, and push to GitHub. 
+3. Complete Exercises 13.5.1 (Parts 1 and 2). Put the necessary code into a new R file `lecture-5-exercises.R`. Add, commit, and push to GitHub. 
