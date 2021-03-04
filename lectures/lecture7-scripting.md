@@ -1,3 +1,5 @@
+For today's exercise, you will need to read in "shrub-volume-datan.csv" which should already be in your data folder :-)
+
 ### Understandable and reusable code
 
 * Write code in understandable chunks.
